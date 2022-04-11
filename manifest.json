@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "P4P EzProxy Redirector",
+  "version": "0.1.0",
+  "description": "Gives you a button that you can click to append the .ezproxy.auckland.ac.nz url to whatever thing you're currently on.",
+
+  "content_scripts": [
+    {
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "matches": [
+        "https://journals.sagepub.com/*",
+        "https://www.tandfonline.com/*",
+        "https://www.sciencedirect.com/*",
+        "https://www.proquest.com/*",
+        "https://link.springer.com/*",
+        "https://www.emerald.com/*"
+      ]
+    }
+  ],
+  "permissions": ["tabs"]
+}

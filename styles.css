@@ -1,0 +1,21 @@
+.ezproxy-button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+  z-index: 9999;
+  color: #fb7299;
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin: 15px;
+  background-color: aliceblue;
+  border: 3px solid pink;
+  font-weight: 400;
+  font-family: sans-serif;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.ezproxy-button:hover {
+  transform: scale(1.1);
+}
