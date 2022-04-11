@@ -2,12 +2,8 @@ console.log("yoza")
 
 const redirectToEzProxy = () => {
     const currentUrl = window.location.href
-    console.log(currentUrl)
 
-    const url = new URL(currentUrl);
-
-    const destUrl = `https://${url.hostname}.ezproxy.auckland.ac.nz${url.pathname}`;
-    console.log(destUrl)
+    const destUrl = `http://ezproxy.auckland.ac.nz/login?url=${currentUrl}`;
 
     window.location = destUrl;
 }
